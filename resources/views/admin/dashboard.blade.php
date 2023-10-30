@@ -2,7 +2,12 @@
 
 @section('content')
 
-<div class="container text-center">
+<div  class="text-center">
+    <h1>Ciao!</h1>
+    <h2>Usa comodamente la barra di navigazione per muoverti nel gestionale</h2>
+</div>
+
+{{-- <div class="container text-center">
     <h1>Dashboard</h1>
 </div>
 
@@ -184,7 +189,7 @@
     </div>
 </section>
 
-<section class="section-card-w-sticky">
+<section class="section-card-w-sticky"> 
 
     <div class="container">
         <div class="row row-cols-2">
@@ -209,9 +214,11 @@
                         </span>
                         <p>Vorresti un <strong>sito web personalizzato</strong> sulla tua attività? Desideri farla crescere con l'aiuto di un professionista? Scopri attraverso i <strong>business focus</strong> quale tipologia di sviluppo si adatta di più alla tua attività.</p><p>Richiedendo una <strong>consulenza professionale</strong> ti fornirò, attraverso un'analisi del tuo progetto, una <strong>proposta di sviluppo</strong> basata sulle tue necessità.</p>
                     </div>
-
                 </div>
             </div>
-
         </div>
+    </div>
+</section>
+--}}
+
 @endsection

@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="d-flex justify-content-center gap-5 my-5">
+    {{-- <div class="d-flex justify-content-center gap-5 my-5">
         <a class="btn btn-primary" href="{{route('admin.projects.edit', $project)}}">modifica</a>
         
                     <!-- Button trigger modal -->
@@ -11,7 +11,7 @@
             Elimina
         </button>
         
-    </div>
+    </div> --}}
 
     <section class="section-admin-show">
         <section>
@@ -27,7 +27,6 @@
                 </div>
             </div>
             <img class="svg" src="{{Vite::asset('resources/img/wave.svg')}}" alt="">
-            
         </section>
 
 
@@ -70,7 +69,7 @@
             </div>
         </section>
 
-        <section class="details-project my-5">
+        {{-- <section class="details-project my-5">
 
             <div class="container-fluid">
                 <div class="row">
@@ -122,9 +121,9 @@
                 </div>
             </div>
 
-        </section>
+        </section> --}}
 
-        <section class="section-color-font">
+        {{-- <section class="section-color-font">
 
             <div class="container py-5">
                 <div class="row my-5 ">
@@ -190,7 +189,7 @@
             @endfor
 
 
-        </section>
+        </section> --}}
 
         <div class="d-flex justify-content-center gap-5 my-5">
             <a class="btn btn-primary" href="{{route('admin.projects.edit', $project)}}">modifica</a>
