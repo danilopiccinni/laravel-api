@@ -23,7 +23,7 @@
     
             <div class="mb-5 form-check" >
                 <label class="form-label" for="description">Descrizione:</label>
-                <textarea style="height: 150px" class="form-control @error('description') is-invalid @enderror" type="text" id="description" name="description">{{old('description') ?? $type->name}}</textarea>
+                <textarea style="height: 150px" class="form-control @error('description') is-invalid @enderror" type="text" id="description" name="description">{{old('description') ?? $type->description}}</textarea>
                 @error('description')
                 <div class="invalid-feedback">
                     <em> {{$message}} </em>

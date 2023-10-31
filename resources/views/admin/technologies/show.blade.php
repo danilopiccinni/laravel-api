@@ -29,10 +29,10 @@
         </div>
 
         <div class="d-flex justify-content-center gap-5 my-5">
-          <a href="{{ route('admin.technologies.edit', $technology) }}" class="card-link btn btn-primary">Modifica</a>
+          <a class="btn btn-success" href="{{route('admin.technologies.edit', $technology) }}"><i class="fa-solid fa-pencil"></i></a>
 
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Elimina</button>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></button>
         </div>
               
     </div>

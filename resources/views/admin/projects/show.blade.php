@@ -14,20 +14,10 @@
     </div> --}}
 
     <section class="section-admin-show">
-        <section>
-            <div class="image py-5">
-                <div class="container-fliud py-5">
-                    <div class="col-10 offset-1">
-                        <div class="container-image" style="background-image: url({{ asset('storage/' . $project->thumb)}})">
-                            <h1>{{$project->title}}</h1>
-                            <div class="opacity"></div>
-                            {{-- <img class="inner-bottom-svg" src="{{Vite::asset('resources/img/wave.svg')}}" alt=""> --}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img class="svg" src="{{Vite::asset('resources/img/wave.svg')}}" alt="">
-        </section>
+
+        <div class="d-flex justify-content-center">
+            <img class="img-fluid" src="{{ asset('storage/' . $project->thumb) }}" alt="">
+        </div>
 
 
         <section class="my-5">
@@ -57,14 +47,14 @@
                 </p>
 
                 <p>
-                    {{$project->description}}{{$project->description}}{{$project->description}}
+                    {{$project->description}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam beatae et voluptas quidem aspernatur tempora voluptatum tempore quos! Laboriosam, nulla est fugiat aut obcaecati facilis exercitationem. Aperiam assumenda voluptatum repellendus.
                 </p>
             </div>
 
         </section>
 
         <section>
-            <div class="container text-center">
+            <div class="container">
                <em>Git-Hub link: </em><a href="">{{ $project->repo }}</a>  
             </div>
         </section>
@@ -192,11 +182,11 @@
         </section> --}}
 
         <div class="d-flex justify-content-center gap-5 my-5">
-            <a class="btn btn-primary" href="{{route('admin.projects.edit', $project)}}">modifica</a>
+            <a class="btn btn-success" href="{{route('admin.projects.edit', $project) }}"><i class="fa-solid fa-pencil"></i></a>
             
                         <!-- Button trigger modal -->
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Elimina
+                <i class="fa-solid fa-trash"></i>
               </button>
               
         </div>

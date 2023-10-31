@@ -15,15 +15,19 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-group-divider">
                 @foreach($technologies as $technology)
                     <tr>
                         <td scope="row">{{$technology->name}}</td>
                         <td>{{$technology->description}}</td>
-                        <td><div class="btn d-flex justify-content-center align-items-center" style=" background-color: {{$technology->color}};">{{$technology->color}}</div></td>
-                        <td><a class="btn btn-secondary ms-5" href="{{route('admin.technologies.show', $technology)}}"><i class="fa-solid fa-magnifying-glass"></i></a></td> 
-                        <td><a class="btn btn-success" href="{{route('admin.technologies.edit', $technology) }}"><i class="fa-solid fa-pencil"></i></a></td>
-                        <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeleteTechnologyModal"><i class="fa-solid fa-trash"></i></button></td>
+                        <td><div class="btn d-flex justify-content-center align-items-center text-white" style=" background-color: {{$technology->color}};">{{$technology->color}}</div></td>
+                        <td>
+                          <div class="d-flex flex-column justify-content-center align-items-center gap-1">
+                            <a class="btn btn-secondary" href="{{route('admin.technologies.show', $technology)}}"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a class="btn btn-success" href="{{route('admin.technologies.edit', $technology) }}"><i class="fa-solid fa-pencil"></i></a>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeleteTechnologyModal"><i class="fa-solid fa-trash"></i></button>
+                          </div>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

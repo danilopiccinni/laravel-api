@@ -5,6 +5,14 @@
 
 <div class="container">
 
+  @if(count($projects) == 0 )
+
+    <div class="alert alert-info" role="alert">
+      Al momento non hai nessun progetto nel sistema
+    </div>
+
+  @else
+
   <table class="table table-striped align-middle table-responsive">
       <thead>
           <tr>
@@ -63,6 +71,7 @@
   </div>
 </div>
 
+@endif
   
 
 {{-- <section class="section-admin-index">

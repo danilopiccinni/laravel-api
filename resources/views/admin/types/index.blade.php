@@ -14,14 +14,18 @@
                 <th></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="table-group-divider">
             @foreach($types as $type)
                 <tr>
-                    <td scope="row">{{$type->name}}</td>
-                    <td>{{$type->description}}</td>
-                    <td><a class="btn btn-secondary ms-5" href="{{route('admin.types.show', $type)}}"><i class="fa-solid fa-magnifying-glass"></i></a></td>
-                    <td><a class="btn btn-success" href="{{route('admin.types.edit', $type)}}"><i class="fa-solid fa-pencil"></i></a></td>
-                    <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#typesDeleteModal"><i class="fa-solid fa-trash"></i></button></td>
+                    <td class="col-2" scope="row">{{$type->name}}</td>
+                    <td class="col-9" >{{$type->description}}</td>
+                    <td class="col-1">
+                      <div class="d-flex flex-column justify-content-center align-items-center gap-1">
+                        <a class="btn btn-secondary" href="{{route('admin.types.show', $type)}}"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="btn btn-success" href="{{route('admin.types.edit', $type)}}"><i class="fa-solid fa-pencil"></i></a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#typesDeleteModal"><i class="fa-solid fa-trash"></i></button>
+                      </div>
+                    </td>
                 </tr>
                 @endforeach
             </table>
